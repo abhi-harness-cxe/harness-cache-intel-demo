@@ -39,13 +39,3 @@ pipeline:
                     command: |-
                       npm ci
                       npm run build
-              - step:
-                  type: BuildAndPushDockerRegistry
-                  name: BuildAndPushDockerRegistry_1
-                  identifier: BuildAndPushDockerRegistry_1
-                  spec:
-                    connectorRef: account.abhishek_docker_connector
-                    repo: abhiharnesscxe/tidbit-react-app
-                    tags:
-                      - <+pipeline.sequenceId>
-                    caching: true
