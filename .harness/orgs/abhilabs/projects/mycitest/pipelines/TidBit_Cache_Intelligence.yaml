@@ -45,7 +45,7 @@ pipeline:
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
                     connectorRef: account.abhishek_docker_connector
-                    repo: abhiharnesscxe/tidbit-react-app
+                    repo: abhiharnesscxe/tidbit
                     tags:
                       - <+pipeline.sequenceId>
                     caching: true
