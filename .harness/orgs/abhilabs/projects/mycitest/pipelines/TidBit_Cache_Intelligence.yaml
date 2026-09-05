@@ -39,6 +39,7 @@ pipeline:
                     command: |-
                       npm ci
                       npm run build
+                      ls -la
               - step:
                   type: BuildAndPushDockerRegistry
                   name: BuildAndPushDockerRegistry_1
@@ -48,4 +49,5 @@ pipeline:
                     repo: abhiharnesscxe/tidbit
                     tags:
                       - <+pipeline.sequenceId>
-                    caching: true
+                    caching: false
+                    context: /harness
