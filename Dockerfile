@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-COPY /harness/dist/ /usr/share/nginx/html/
+COPY dist/ /usr/share/nginx/html/
 
 EXPOSE 80
 
