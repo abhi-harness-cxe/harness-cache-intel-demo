@@ -39,6 +39,7 @@ pipeline:
                     command: |-
                       npm ci
                       npm run build
+                      ls -la
               - step:
                   type: BuildAndPushDockerRegistry
                   name: BuildAndPushDockerRegistry_1
