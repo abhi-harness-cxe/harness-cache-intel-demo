@@ -48,5 +48,5 @@ pipeline:
                     repo: abhiharnesscxe/tidbit
                     tags:
                       - <+pipeline.sequenceId>
-                    caching: true
-                    context: .
+                    caching: false
+                    context: /harness
