@@ -49,3 +49,4 @@ pipeline:
                     tags:
                       - <+pipeline.sequenceId>
                     caching: true
+                    context: .
